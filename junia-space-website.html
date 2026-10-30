@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Junia Space Association - Projet APEX</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=IBM+Plex+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="[fonts.googleapis.com](https://fonts.googleapis.com)">
+    <link rel="preconnect" href="[fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin>
+    <link href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=IBM+Plex+Sans:wght@300;400;600&display=swap)" rel="stylesheet">
     <style>
         :root {
             --primary: #0a0e27;
@@ -31,7 +31,6 @@
             overflow-x: hidden;
         }
 
-        /* Animated Background */
         .stars-background {
             position: fixed;
             top: 0;
@@ -67,7 +66,6 @@
             100% { background-position: 100% 100%; }
         }
 
-        /* Navigation */
         nav {
             position: fixed;
             top: 0;
@@ -141,7 +139,6 @@
             width: 100%;
         }
 
-        /* Hero Section */
         .hero {
             min-height: 100vh;
             display: flex;
@@ -252,7 +249,6 @@
             transform: translateY(-2px);
         }
 
-        /* Rocket Illustration */
         .hero-visual {
             position: relative;
             height: 700px;
@@ -355,55 +351,6 @@
             100% { transform: translateX(-50%) scaleY(1.1); opacity: 1; }
         }
 
-        /* Stats Section */
-        .stats {
-            padding: 6rem 5%;
-            background: linear-gradient(to bottom, transparent, rgba(26, 31, 58, 0.5));
-        }
-
-        .stats .container {
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 3rem;
-            margin-top: 3rem;
-        }
-
-        .stat-card {
-            text-align: center;
-            padding: 2rem;
-            background: rgba(26, 31, 58, 0.6);
-            border: 1px solid rgba(0, 217, 255, 0.2);
-            border-radius: 10px;
-            transition: all 0.3s ease;
-        }
-
-        .stat-card:hover {
-            transform: translateY(-10px);
-            border-color: var(--accent);
-            box-shadow: 0 10px 30px rgba(0, 217, 255, 0.2);
-        }
-
-        .stat-number {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 3rem;
-            font-weight: 900;
-            color: var(--accent);
-            margin-bottom: 0.5rem;
-        }
-
-        .stat-label {
-            font-size: 1.1rem;
-            color: var(--text-muted);
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
-        /* Section Title */
         .section-title {
             font-family: 'Orbitron', sans-serif;
             font-size: 3rem;
@@ -424,7 +371,6 @@
             margin: 0 auto 3rem;
         }
 
-        /* About Section */
         .about {
             padding: 6rem 5%;
         }
@@ -492,7 +438,93 @@
             font-size: 0.95rem;
         }
 
-        /* EUROC Section */
+        .media-section {
+            padding: 6rem 5%;
+            background: linear-gradient(to bottom, transparent, rgba(26, 31, 58, 0.4), transparent);
+        }
+
+        .media-section .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .media-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 2.5rem;
+            margin-top: 3rem;
+            align-items: stretch;
+        }
+
+        .media-card {
+            background: rgba(26, 31, 58, 0.6);
+            border: 1px solid rgba(0, 217, 255, 0.25);
+            border-radius: 16px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .media-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--accent);
+            box-shadow: 0 15px 35px rgba(0, 217, 255, 0.2);
+        }
+
+        .media-wrapper {
+            position: relative;
+            width: 100%;
+            height: 460px;
+            background: #050817;
+            overflow: hidden;
+        }
+
+        .media-wrapper img,
+        .media-wrapper video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .media-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: rgba(10, 14, 39, 0.85);
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.75rem;
+            padding: 0.35rem 0.75rem;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            backdrop-filter: blur(4px);
+        }
+
+        .media-caption {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .media-caption h4 {
+            font-family: 'Orbitron', sans-serif;
+            color: var(--accent);
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .media-caption p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
         .euroc {
             padding: 6rem 5%;
             background: linear-gradient(135deg, rgba(0, 217, 255, 0.05) 0%, rgba(255, 107, 53, 0.05) 100%);
@@ -526,7 +558,6 @@
             text-align: justify;
         }
 
-        /* Team Section */
         .team {
             padding: 6rem 5%;
         }
@@ -575,7 +606,6 @@
             letter-spacing: 1px;
         }
 
-        /* Contact Section */
         .contact {
             padding: 6rem 5%;
             background: linear-gradient(to top, rgba(26, 31, 58, 0.8), transparent);
@@ -621,7 +651,6 @@
             color: var(--accent);
         }
 
-        /* Footer */
         footer {
             padding: 3rem 5%;
             border-top: 1px solid rgba(0, 217, 255, 0.2);
@@ -651,7 +680,6 @@
             transform: scale(1.2);
         }
 
-        /* Responsive */
         @media (max-width: 1024px) {
             .hero-content {
                 grid-template-columns: 1fr;
@@ -671,8 +699,11 @@
                 grid-template-columns: 1fr;
             }
 
-            .stats-grid {
-                grid-template-columns: repeat(2, 1fr);
+            .media-grid {
+                grid-template-columns: 1fr;
+                max-width: 500px;
+                margin-left: auto;
+                margin-right: auto;
             }
 
             .nav-links {
@@ -685,7 +716,6 @@
                 font-size: 2.5rem;
             }
 
-            .stats-grid,
             .team-stats {
                 grid-template-columns: 1fr;
             }
@@ -708,13 +738,13 @@
 <body>
     <div class="stars-background"></div>
 
-    <!-- Navigation -->
     <nav>
         <div class="container">
             <div class="logo">JSA</div>
             <ul class="nav-links">
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#apropos">À Propos</a></li>
+                <li><a href="#lancements">Lancements</a></li>
                 <li><a href="#euroc">EuRoC</a></li>
                 <li><a href="#equipe">Équipe</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -722,7 +752,6 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="accueil" class="hero">
         <div class="hero-content">
             <div class="hero-text">
@@ -750,7 +779,6 @@
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="apropos" class="about">
         <div class="container">
             <h2 class="section-title">Le Projet APEX</h2>
@@ -768,7 +796,7 @@
                         <div class="feature-icon">🚀</div>
                         <div class="feature-text">
                             <h4>Conception Complète</h4>
-                            <p>Notre équipe de 9 étudiants gère l'intégralité du cycle de développement</p>
+                            <p>Notre équipe de 13 étudiants gère l'intégralité du cycle de développement</p>
                         </div>
                     </div>
                     <div class="feature-item">
@@ -797,7 +825,48 @@
         </div>
     </section>
 
-    <!-- EuRoC Section -->
+    <section id="lancements" class="media-section">
+        <div class="container">
+            <h2 class="section-title">Nos Essais en Vol</h2>
+            <p class="section-subtitle">Du décompte sur la rampe de tir jusqu'à la récupération après l'apogée</p>
+
+            <div class="media-grid">
+                <div class="media-card">
+                    <div class="media-wrapper">
+                        <video id="launchVideo" src="lancement-video.mp4#t=0,7" controls playsinline preload="metadata"></video>
+                        <span class="media-badge">Vidéo • 0:07</span>
+                    </div>
+                    <div class="media-caption">
+                        <h4>Décollage & Propulsion</h4>
+                        <p>Décompte final, mise à feu et ascension rapide vers la couche nuageuse.</p>
+                    </div>
+                </div>
+
+                <div class="media-card">
+                    <div class="media-wrapper">
+                        <img src="lancement-rampe.png" alt="Décollage d'une fusée depuis la rampe de lancement">
+                        <span class="media-badge">Allumage</span>
+                    </div>
+                    <div class="media-caption">
+                        <h4>Campagne de Tir</h4>
+                        <p>Mise à feu sur la rampe de lancement multiple lors de nos essais sur le terrain.</p>
+                    </div>
+                </div>
+
+                <div class="media-card">
+                    <div class="media-wrapper">
+                        <img src="recuperation.png" alt="Fusée en descente sous sa banderole de récupération">
+                        <span class="media-badge">Récupération</span>
+                    </div>
+                    <div class="media-caption">
+                        <h4>Phase de Descente</h4>
+                        <p>Déploiement réussi du système de récupération par banderole après l'apogée.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="euroc" class="euroc">
         <div class="container">
             <h2 class="section-title">European Rocketry Challenge</h2>
@@ -811,7 +880,6 @@
         </div>
     </section>
 
-    <!-- Team Section -->
     <section id="equipe" class="team">
         <div class="container">
             <h2 class="section-title">Notre Équipe</h2>
@@ -820,7 +888,7 @@
             <div class="team-stats">
                 <div class="team-stat">
                     <div class="team-stat-icon">👥</div>
-                    <h4>9</h4>
+                    <h4>13</h4>
                     <p>Membres actifs</p>
                 </div>
                 <div class="team-stat">
@@ -837,7 +905,6 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title">Contactez-Nous</h2>
@@ -847,7 +914,7 @@
                 <div class="contact-info">
                     <div class="contact-item">
                         <div class="contact-item-icon">📧</div>
-                        <a href="/cdn-cgi/l/email-protection#30535f5e44515344705a455e59511d43405153551e5642"><span class="__cf_email__" data-cfemail="9dfef2f3e9fcfee9ddf7e8f3f4fcb0eeedfcfef8b3fbef">[email&#160;protected]</span></a>
+                        <a href="mailto:contact@junia-space.fr">contact@junia-space.fr</a>
                     </div>
                     <div class="contact-item">
                         <div class="contact-item-icon">📍</div>
@@ -855,7 +922,7 @@
                     </div>
                     <div class="contact-item">
                         <div class="contact-item-icon">🤝</div>
-                        <a href="#partenariats">Devenir Partenaire</a>
+                        <a href="Dossier_de_partenariat_JSA.pdf" download="Dossier_Partenariat_JSA.pdf">Devenir Partenaire</a>
                     </div>
                 </div>
                 <div style="margin-top: 3rem;">
@@ -865,7 +932,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <p>&copy; 2026 Junia Space Association - Tous droits réservés</p>
         <p>Projet APEX - European Rocketry Challenge</p>
@@ -876,8 +942,7 @@
         </div>
     </footer>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-        // Smooth scrolling for navigation links
+    <script>
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -891,9 +956,18 @@
             });
         });
 
-        // Add scroll animation for stat numbers
+        const launchVideo = document.getElementById('launchVideo');
+        if (launchVideo) {
+            launchVideo.addEventListener('timeupdate', function () {
+                if (this.currentTime >= 7) {
+                    this.pause();
+                    this.currentTime = 0;
+                }
+            });
+        }
+
         const observerOptions = {
-            threshold: 0.5,
+            threshold: 0.2,
             rootMargin: '0px'
         };
 
@@ -906,4 +980,12 @@
             });
         }, observerOptions);
 
-        document.querySelectorAll('.stat-card, .team-stat, .f
+        document.querySelectorAll('.team-stat, .feature-item, .media-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
